@@ -14,7 +14,7 @@ heroku()
 sudo()
 
 # Clients
-app = Mai()
+app = MaiBot()
 userbot = Userbot()
 
 
