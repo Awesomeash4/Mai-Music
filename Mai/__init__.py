@@ -1,11 +1,33 @@
-from Mai.utils.channelplay import *
-from Mai.utils.database import *
-from Mai.utils.decorators import *
-from Mai.utils.formatters import *
-from Mai.utils.inline import *
-from Mai.utils.pastebin import *
-from Mai.utils.sys import *
+from Mai.core.bot import AnonXBot
+from Mai.core.dir import dirr
+from Mai.core.git import git
+from Mai.core.userbot import Userbot
+from Mai.misc import dbb, heroku, sudo
+
+from .logging import LOGGER
+
+
+dirr()
+
+git()
+
+dbb()
+
+heroku()
+
+sudo()
 
 # Clients
 app = Mai()
 userbot = Userbot()
+
+
+from .platforms import *
+
+YouTube = YouTubeAPI()
+Carbon = CarbonAPI()
+Spotify = SpotifyAPI()
+Apple = AppleAPI()
+Resso = RessoAPI()
+SoundCloud = SoundAPI()
+Telegram = TeleAPI()
