@@ -1,4 +1,4 @@
-from Mai.core.bot import AnonXBot
+from Mai.core.bot import MaiBot
 from Mai.core.dir import dirr
 from Mai.core.git import git
 from Mai.core.userbot import Userbot
@@ -8,13 +8,9 @@ from .logging import LOGGER
 
 
 dirr()
-
 git()
-
 dbb()
-
 heroku()
-
 sudo()
 
 # Clients
