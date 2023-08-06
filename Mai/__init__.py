@@ -5,3 +5,7 @@ from Mai.utils.formatters import *
 from Mai.utils.inline import *
 from Mai.utils.pastebin import *
 from Mai.utils.sys import *
+
+# Clients
+app = Mai()
+userbot = Userbot()
